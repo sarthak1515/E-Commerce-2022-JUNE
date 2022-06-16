@@ -1,6 +1,7 @@
 // import { Button } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../Responsive';
 const Container=styled.div`
 width:100vw ;
 height:100vh ;
@@ -17,6 +18,10 @@ const Wrapper=styled.div`
 padding:20px ;
 width:40% ;
 background-color:white ;
+${mobile({
+    width:"60%",
+
+  })}
 
 `;
 const Form=styled.form`
@@ -31,6 +36,11 @@ const Title=styled.h1`
 
 font-size: 24px;
 font-weight: 300;
+${mobile({
+    textAlign:"center",
+    fontSize:"18px"
+
+  })}
 `;
 const Input=styled.input`
 flex:1 ;
@@ -38,6 +48,10 @@ min-width:40% ;
 max-width:40% ;
 margin:20px 10px 0px 0px ;
 padding:10px ;
+${mobile({
+    fontSize:"10px"
+
+  })}
 
 `;
 const Agreement=styled.span`
@@ -51,6 +65,10 @@ border:none ;
 padding:5px 1px;
 background-color:teal ;
 color:white ;
+${mobile({
+    fontSize:"10px"
+
+  })}
 `;
 
 export default function Register() {

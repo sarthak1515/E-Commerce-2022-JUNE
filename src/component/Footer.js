@@ -7,10 +7,15 @@ import MapIcon from '@mui/icons-material/Map';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import Email from "@mui/icons-material/Email";
+import { mobile } from "../Responsive";
 const Container = styled.div`
   display: flex;
+  
   justify-content: space-between;
   background-color:teal ;
+  ${mobile({
+    flexDirection:"column" 
+  })}
 `;
 const Left = styled.div`
   flex: 1;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import { slideritems } from "../data";
+import { mobile } from "../Responsive";
 const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -10,6 +11,9 @@ const Container = styled.div`
   /* background-color:coral ; */
   position: relative;
   overflow:hidden ;
+  ${mobile({
+    display:"none"
+  })}
 `;
 const Arrow = styled.div`
   width: 50px;
@@ -54,6 +58,9 @@ const Image = styled.img`
   height: 80%;
   width:50vw ;
   border:2px solid black
+  ${mobile({
+    
+  })}
 `;
 const InfoContainer = styled.div`
   flex: 1;

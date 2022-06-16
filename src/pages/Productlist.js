@@ -5,6 +5,7 @@ import Footer from '../component/Footer';
 import Navbar from '../component/Navbar';
 import Newsletter from '../component/Newsletter';
 import Products from '../component/Products';
+import { mobile } from '../Responsive';
 const Container=styled.div``;
 const Title=styled.h1`
 text-align:center;
@@ -13,6 +14,7 @@ margin:20px
 const FilterContiner=styled.div`
 display:flex;
 justify-content:space-between ;
+
 `;
 const Filter=styled.div`
 margin: 20px;
@@ -21,13 +23,32 @@ const FilteTextr=styled.span`
 font-size: 20px;
 font-weight: 600;
 margin-right: 20px;
+${mobile({
+    fontSize:"10px",
+  
+   
+
+  })}
 `;
 const Select=styled.select`
 padding:10px ;
 margin-right: 20px;
+${mobile({
+    padding:"3px",
+    marginRight:"5px",
+    fontSize:"10px"
+   
+
+  })}
 `;
 const Option=styled.option`
 padding:10px ;
+${mobile({
+   padding:"0px",
+    fontSize:"10px"
+   
+
+  })}
 `;
 
 export default function Productlist() {

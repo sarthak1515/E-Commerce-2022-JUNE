@@ -2,7 +2,7 @@
 import { height } from "@mui/system";
 import React from "react";
 import styled from "styled-components";
-
+import { mobile } from "../Responsive";
 const Container = styled.div`
 flex:1;
 margin:3px ;

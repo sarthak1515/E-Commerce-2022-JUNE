@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../Responsive';
 const Container=styled.div`
 width:100vw ;
 height:100vh ;
@@ -16,6 +17,10 @@ const Wrapper=styled.div`
 padding:20px ;
 width:25% ;
 background-color:white ;
+${mobile({
+    width:"40%",
+
+  })}
 
 `;
 const Form=styled.form`
@@ -34,6 +39,10 @@ flex:1 ;
 min-width:40% ;
 margin:10px 0px;
 padding:10px ;
+${mobile({
+    padding:"3px",
+    maxWidth:"80%"
+  })}
 
 `;
 const  Link=styled.a`
