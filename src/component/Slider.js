@@ -53,6 +53,7 @@ const ImgContainer = styled.div`
 const Image = styled.img`
   height: 80%;
   width:50vw ;
+  border:2px solid black
 `;
 const InfoContainer = styled.div`
   flex: 1;
@@ -96,7 +97,7 @@ export default function Slider() {
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
       {slideritems.map((data)=>
-        <Slide bg={data.bg}>
+        <Slide bg={data.bg} key={data.id}>
           <ImgContainer>
             <Image src={data.img}></Image>
           </ImgContainer>
