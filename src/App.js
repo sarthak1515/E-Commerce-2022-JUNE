@@ -16,6 +16,7 @@ function App() {
     <Link to="/register"></Link>
     <Link to="/singleproduct"></Link>
     <Link to="/multipleproduct"></Link>
+    <Link to="/*"></Link>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
       <Route path='/cart' element={<Cart/>}></Route>
@@ -23,6 +24,7 @@ function App() {
       <Route path='/register' element={<Register/>}></Route>
       <Route path='/singleproduct' element={<Product/>}></Route>
       <Route path='/multipleproduct' element={<Productlist/>}></Route>
+      <Route path='/*' element={<Home/>}></Route>
     </Routes>
    </Router>
   );
